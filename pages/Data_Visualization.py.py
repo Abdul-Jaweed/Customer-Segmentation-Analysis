@@ -11,7 +11,7 @@ df = pd.read_csv("Mall_Customers.csv")
 st.set_page_config(page_title="Customer Segmentation", page_icon=":bar_chart:", layout="wide")
 
 # Set up the sidebar
-st.sidebar.title("Customer Segmentation")
+st.sidebar.title(":red[Customer Segmentation Visualization]")
 genre = st.sidebar.selectbox("Select a Gender", df['Gender'].unique())
 age_range = st.sidebar.slider("Select an age range", int(df['Age'].min()), int(df['Age'].max()), (int(df['Age'].min()), int(df['Age'].max())))
 

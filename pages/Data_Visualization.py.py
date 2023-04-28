@@ -12,7 +12,7 @@ st.set_page_config(page_title="Customer Segmentation", page_icon=":bar_chart:", 
 
 # Set up the sidebar
 st.sidebar.title(":red[Customer Segmentation Visualization]")
-genre = st.sidebar.selectbox("Select a Gender", df['Gender'].unique())
+genre = st.sidebar.selectbox(":blue[Select a Gender]", df['Gender'].unique())
 age_range = st.sidebar.slider("Select an age range", int(df['Age'].min()), int(df['Age'].max()), (int(df['Age'].min()), int(df['Age'].max())))
 
 # Filter the data
